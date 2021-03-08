@@ -1,0 +1,183 @@
+* {
+  font-family: Spartan;
+  font-size: 15px;
+}
+
+:root {
+  --primary: hsl(300, 43%, 22%);
+  --secondary: hsl(300, 24%, 96%);
+  --star: / images/icon-star.svg;
+  --pink: hsl(333, 80%, 67%);
+  --box-color: ;
+  --light-gray: hsl(300, 24%, 96%);
+}
+
+body {
+  background: url(/images/bg-pattern-top-desktop.svg) top left no-repeat,
+    url(/images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+}
+.outer-container {
+  padding: 90px 90px 0px 90px;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.upper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.intro {
+  width: 50%;
+}
+.intro-head {
+  margin: 0px;
+  width: 85%;
+  font-size: 3rem;
+  color: var(--primary);
+}
+.intro-para {
+  width: 85%;
+  font-size: 1rem;
+  color: hsl(303, 10%, 53%);
+}
+.rating {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rate-box {
+  display: inline-block;
+  padding: 3px 30px;
+  margin: 7px;
+  border-radius: 10px;
+  background-color: var(--secondary);
+}
+
+.rate-text {
+  display: inline-block;
+  padding: 0px 25px;
+  color: var(--primary);
+  font-weight: bold;
+}
+.as-fs {
+  align-self: flex-start;
+}
+.as-c {
+  align-self: center;
+}
+.as-fe {
+  align-self: flex-end;
+}
+
+.star {
+  padding: 0px 5px;
+}
+
+.lower {
+  width: 90%;
+  height: 35%;
+  display: flex;
+  margin: auto;
+}
+
+.testimony {
+  padding: 30px;
+  margin-right: 20px;
+  background-color: var(--primary);
+  border-radius: 10px;
+}
+
+.ids {
+  width: 100%;
+  display: flex;
+}
+.img-t {
+  border-radius: 50px;
+  width: 40px;
+  padding: 5px;
+}
+
+.pic {
+  border-radius: 60px;
+  width: 20%;
+  padding-right: 5px;
+}
+
+.id {
+  width: 60%;
+}
+
+.name {
+  color: white;
+  margin: 3px;
+}
+.verified {
+  color: hsl(333, 80%, 67%);
+  font-size: 0.9rem;
+  color: hsl(333, 80%, 67%);
+  margin: 3px;
+}
+
+.comment {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 375px) {
+  * {
+    font-size: 10px;
+  }
+  .outer-container {
+    padding: 60px 5px;
+  }
+  .upper {
+    width: 100;
+  }
+  .intro {
+    width: 100%;
+
+    text-align: center;
+  }
+  .intro-head {
+    width: 100%;
+  }
+  .intro-para {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 10px 0px;
+  }
+  .rating {
+    width: 100%;
+    text-align: center;
+  }
+
+  .lower {
+    margin-bottom: 50px;
+    width: 100%;
+    height: 0px;
+    display: block;
+  }
+  .testimony {
+    margin: 10px 0px;
+  }
+  .name,
+  .verified {
+    font-size: 1.3rem;
+  }
+  .comment {
+    font-size: 1.2rem;
+  }
+  footer {
+    display: none;
+  }
+}
